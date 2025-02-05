@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Drag & Drop Area */
+.drop-area {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: background 0.3s ease;
+}
+.drop-area.dragover {
+    background-color: #e0f3ff;
+}
+.drop-area label {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Preview Image */
+img {
+    max-width: 100%;
+    margin-top: 10px;
+    display: none;
+    border-radius: 5px;
+}
+
+/* Upload Button */
+#uploadBtn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Progress Bar */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+.progress-bar {
+    height: 10px;
+    width: 0%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Hide default file input */
+#imageInput {
+    display: none;
+}
+
+/* Make label act like a button */
+.click-upload {
+    display: block;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+}
