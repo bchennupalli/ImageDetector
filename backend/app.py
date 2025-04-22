@@ -39,6 +39,7 @@ def upload_image():
     print(f"Prediction: {result}, Probability: {probability:.4f}")
     return jsonify({"result": result, "probability": f"{probability:.4f}"})
 
+
 @app.route('/uploads/<path:path>')
 def serve_static(path):
     return send_from_directory("../frontend/static", path)
